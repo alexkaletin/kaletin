@@ -1,9 +1,14 @@
 #about:hover {
   background-color: aliceblue;
 }
-#about h1 {
+
+.header {
   margin-top: 2em;
   margin-bottom: 1em;
   text-align: center;
-  font-style: italic;
+}
+
+.project {
+  display: flex;
+  flex-flow: row wrap;
 }

@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script defer src="index.js"></script>
   </head>
@@ -43,10 +44,10 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work Experience</a>
+                <a class="nav-link" href="#work">Work History</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -56,10 +57,52 @@
         </div>
       </nav>
       <div id="about">
-        <h1>About Me</h1>
+        <h1 class="header">About Me</h1>
+      </div>
+      <div class="accordion" id="work">
+        <h1 class="header">Work History</h1>
+      </div>
+      <div id="projects">
+        <h1 class="header">My Projects</h1>
+        <div class="row project justify-content-center">
+          <div class="col-lg-6 m-2">
+            <div class="card">
+              <h2 class="card-title text-center mt-3">Review App</h2>
+              <a
+                class="text-decoration-none text-center"
+                href="https://github.com/alexkaletin/Review-app.git"
+                >project repo</a
+              >
+              <p class="card-body">
+                This project is a review web-app that allows an authenticated
+                user via google to leave a review. The user review field is then
+                translated to a specified language using google translate API.
+                When visiting the site it allows anyone to see all the reviews
+                meaning that you don’t need to be authenticated. The app uses
+                dockerfile to create a container image which is then stored on
+                google container registry and run using cloud run. The app is
+                written in python, uses flask as the web framework, and cloud
+                datastore as the database. This project was built for my final
+                project for Internet, Web and Cloud systems course, so it’s a
+                simple web-app design which focused more on the cloud features
+                and the back-end implementations. The project was constructed
+                using the model-view-presenter architectural pattern.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <h2 class="card-title text-center mt-3">Title</h2>
+              <a class="text-decoration-none text-center" href="..."
+                >project repo</a
+              >
+              <p class="card-body">Hello</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contact">
-        <h1>Contact Me</h1>
+        <h1 class="header">Contact Me</h1>
       </div>
     </main>
   </body>
