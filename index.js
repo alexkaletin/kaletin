@@ -1,3 +1,18 @@
+//code for submitting the function
+let form = document.querySelector("form");
+form.addEventListener("submit", handleSubmit);
+function handleSubmit(event) {
+  //prevents the refresh from happening
+  event.preventDefault();
+  name = form.name.value;
+  email = form.email.value;
+  message = form.message.value;
+  const str = `Your name is ${name}
+  Your email is ${email}
+  Your message is ${message}`;
+  console.log(str);
+}
+
 const about = () => {
   let about = document.querySelector("#about");
 
