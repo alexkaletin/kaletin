@@ -4,11 +4,11 @@ Hello and welcome to the git repository of my personal website which is hosted v
 
 ### Technologies used
 
-- Ajax
 - Bootstrap
 - CSS
 - HTML
 - Javascript
+- jQuery
 
 ### Running the code
 
