@@ -65,12 +65,12 @@
       <div id="projects">
         <h1 class="header">My Projects</h1>
         <div class="row project justify-content-center">
-          <div class="col-lg-6 m-2">
+          <div class="col-lg-6 my-2">
             <div class="card">
               <h2 class="card-title text-center my-3">Review App</h2>
               <a
                 class="btn btn-outline-primary mx-auto"
-                href="https://github.com/alexkaletin/Review-app.git"
+                href="https://github.com/alexkaletin/Review-app"
                 >project repo</a
               >
               <p class="card-body">
@@ -90,13 +90,29 @@
               </p>
             </div>
           </div>
-          <div class="col">
+          <div class="col my-2">
             <div class="card">
-              <h2 class="card-title text-center my-3">Title</h2>
-              <a class="btn btn-outline-primary mx-auto" href="..."
+              <h2 class="card-title text-center my-3">SRE Project</h2>
+              <a
+                class="btn btn-outline-primary mx-auto"
+                href="https://github.com/alexkaletin/SRE-project"
                 >project repo</a
               >
-              <p class="card-body">Hello</p>
+              <p class="card-body">
+                This project comes from the SRE (site reliability engineering)
+                course that I took at PSU. It was a team project, so I worked on
+                it with a teammate. This project focused more on making a mock
+                site reliable. The professor monitored the site 24/7 and did
+                stress tests to see if our site withstands. In order to improve
+                our reliability, we used Docker and Docker-compose since we
+                split up our components into different images. Then we used
+                Kubernetes to create bootable VMs within gcloud infrastructure
+                to be able to scale when demand is high and scale down when
+                demand is low; thus, reducing the project cost and improving
+                peak time performance. We also used Cloudflare to create a
+                tunnel for each ephemeral virtual machine to be able to load
+                balance efficiently and prevent denial of service attacks.
+              </p>
             </div>
           </div>
         </div>
