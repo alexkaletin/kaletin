@@ -4,6 +4,8 @@ form.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   //prevents the refresh from happening
   event.preventDefault();
+
+  //collects information from the form and adds it to the console
   name = form.name.value;
   email = form.email.value;
   message = form.message.value;
@@ -13,6 +15,7 @@ function handleSubmit(event) {
   console.log(str);
 }
 
+//This function will create find the about section and append my bio paragrpah
 const about = () => {
   let about = document.querySelector("#about");
 
@@ -24,9 +27,11 @@ const about = () => {
   about.append(p);
 };
 
+//This function will create an accordion and add my work information
 const work = () => {
   $(document).ready(function () {
     $("#work")
+      //First job
       .append(
         $("<div>")
           .addClass("accordion-item")
@@ -52,6 +57,7 @@ const work = () => {
                   )
               )
           )
+          //First job descriptions (hidden in the beginning)
           .append(
             $("<div>")
               .addClass("accordion-collapse collapse")
@@ -70,6 +76,7 @@ const work = () => {
               )
           )
       )
+      //Second job
       .append(
         $("<div>")
           .addClass("accordion-item")
@@ -95,6 +102,7 @@ const work = () => {
                   )
               )
           )
+          //Second job descriptions (hidden in the beginning)
           .append(
             $("<div>")
               .addClass("accordion-collapse collapse")

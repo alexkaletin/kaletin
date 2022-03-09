@@ -1,3 +1,3 @@
-# kaletin
+# Aleksandr Kaletin
 
-## This is my personal website for my resume
+## This is my personal website
