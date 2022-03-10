@@ -12,3 +12,26 @@
   display: flex;
   flex-flow: row wrap;
 }
+
+/** Styling for when dark mode is active **/
+.dark-mode {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.dark-mode #about:hover {
+  background-color: #222;
+}
+
+.dark-mode li {
+  color: black;
+}
+
+.dark-mode .accordion-button {
+  color: #e6e6e6;
+  background-color: #222;
+}
+
+.dark-mode .card {
+  color: black;
+}

@@ -131,5 +131,11 @@ const work = () => {
   });
 };
 
+//This function will toggle dark-mode on/off
+function switchModes() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
 about();
 work();
