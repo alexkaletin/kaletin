@@ -63,7 +63,7 @@ const work = () => {
               .addClass("accordion-collapse collapse")
               .attr("id", "collapseOne")
               .attr("aria-labelledby", "itemOne")
-              .attr("data-bs-parent", "work")
+              .attr("data-bs-parent", "#work")
               .append(
                 $("<div>")
                   .addClass("accordion-body")
@@ -108,7 +108,7 @@ const work = () => {
               .addClass("accordion-collapse collapse")
               .attr("id", "collapseTwo")
               .attr("aria-labelledby", "itemTwo")
-              .attr("data-bs-parent", "work")
+              .attr("data-bs-parent", "#work")
               .append(
                 $("<div>")
                   .addClass("accordion-body")
