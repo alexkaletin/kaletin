@@ -13,6 +13,13 @@
   flex-flow: row wrap;
 }
 
+.footerTop {
+  background-color: #f1f1f1;
+}
+
+.footerBottom {
+  background-color: darkgray;
+}
 /** Styling for when dark mode is active **/
 .dark-mode {
   background-color: #222;

@@ -131,6 +131,24 @@ const work = () => {
   });
 };
 
+//This function will create the footer on the very bottom with the correct year
+const footerBottom = () => {
+  const year = new Date().getFullYear();
+  let bot = document.querySelector("footer");
+
+  //creates footer bottom div
+  let div = document.createElement("div");
+  div.className = "footerBottom";
+
+  //creates footer copyright
+  let p = document.createElement("p");
+  p.className = "py-2";
+  p.textContent = `© ${year} By Aleksandr Kaletin`;
+
+  div.append(p);
+  bot.append(div);
+};
+
 //This function will toggle dark-mode on/off
 function switchModes() {
   var element = document.body;
@@ -139,3 +157,4 @@ function switchModes() {
 
 about();
 work();
+footerBottom();
